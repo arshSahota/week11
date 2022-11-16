@@ -28,8 +28,10 @@ let circleArea = (radius) =>{
     let area = 3.14*radius*radius;
     return area;
 }
-circleArea(radius);
-alert(`The area of circle with radius ${radius} is ${circleArea(radius)}`)
+result = circleArea(radius);
+document.getElementById("radius").innerHTML = radius;
+document.getElementById("result").innerHTML = result;
+
 
 
 // const body = document.querySelector("body")
