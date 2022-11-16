@@ -1,4 +1,4 @@
-user_name = prompt("Enter your name here: ");
+// user_name = prompt("Enter your name here: ");
 
 // function greet(name){
 //     console.log("Hello " +name+"!");
@@ -14,21 +14,22 @@ user_name = prompt("Enter your name here: ");
 
 // arrow method
 
-let greet = (name, time="day") => {
-    console.log("Hello "+name+"!")
-    // console.log("Good "+time+ " " + name+"!");
-}
-greet(name);
+// let greet = (name, time="day") => {
+//     // console.log("Hello "+name+"!")
+//     console.log("Good "+time+ " " + name+"!");
+//     console.log(`Good ${time} ${name}!`)
+// }
+// greet(user_name, " ", "morning");
 
 // circle area function
 
-// radius = prompt("Please enter circle area here: ")
-// let circleArea = (radius) =>{
-//     let area = 3.14*radius*radius;
-//     return area;
-// }
-// circleArea(radius);
-// console.log(`Area of the circle is: ${circleArea(radius)}`);
+radius = prompt("Please enter circle area here: ")
+let circleArea = (radius) =>{
+    let area = 3.14*radius*radius;
+    return area;
+}
+circleArea(radius);
+alert(`The area of circle with radius ${radius} is ${circleArea(radius)}`)
 
 
 // const body = document.querySelector("body")
