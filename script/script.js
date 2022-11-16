@@ -23,29 +23,33 @@
 
 // circle area function
 
-radius = prompt("Please enter circle area here: ")
-let circleArea = (radius) =>{
-    let area = 3.14*radius*radius;
-    return area;
-}
-result = circleArea(radius);
-document.getElementById("radius").innerHTML = radius;
-document.getElementById("result").innerHTML = result;
-
-
-
-// const body = document.querySelector("body")
-// const ul = document.querySelector("body .shopping")
-// let array_list = ["Apples", "Butter", "Chicken", "Salad", "Flowers"];
+// radius = prompt("Please enter circle area here: ")
+// let circleArea = (radius) =>{
+//     let area = 3.14*radius*radius;
+//     return area;
+// }
+// result = circleArea(radius);
+// document.getElementById("radius").innerHTML = radius;
+// document.getElementById("result").innerHTML = result;
 // ul.classList.replace("circleList", "sqaureList") 
-// //function
-// let ShoppingList = array_list.forEach(item => {
-//     const newList = document.createElement("li")
-//     newList.classList.add("sqaureList")
-//     // newList.classList.add("sqaureList")
-//     // ul.classList.replace("circleList", "sqaureList")
-//     newList.innerHTML = item;
-//     body.appendChild(newList)
-// });
+    // newList.classList.add("sqaureList")
+    // newList.classList.add("sqaureList")
+
+
+const body = document.querySelector("body")
+const ul = document.querySelector(".shopping")
+
+let array_list = ["apples", "butter", "chicken", "salad", "flowers", "green-pepper"];
+//function
+let ShoppingList = array_list.forEach(item => {
+    const newList = document.createElement("li")
+    newList.textContent = item;
+    body.appendChild(newList)
+});
+
+function changeListStyle(GroceryList){
+    GroceryList.classList.replace("circleList", "sqaureList")
+}
+changeListStyle(ul);
 
 
