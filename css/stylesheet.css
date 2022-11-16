@@ -1,0 +1,9 @@
+html{
+    background-color: whitesmoke;
+}
+.squareList{
+    list-style-type: square;
+    }
+.circleList {
+        list-style-type: circle;
+    }
